@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Index Viticulture</title>
+    <link href="static/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .content, html{background-color: blue;}
+        .content{margin-top:5%;}
+        .fondBleu{background-color:black; color:white;width:15%; text-align:center;font-variant:small-caps;}
+        a{color:white;}
+        header{text-align:center;background-image: linear-gradient(blue,white);}
+        .logo{font-weight:bolder;font-variant:small-caps;}
+    </style>
+</head>
+<body >
+    <div id="nav">
+        <ul class="nav nav-tabs navbar-fixed-top">
+            <li><h4 class="logo">Projet Visiculture</h4></li>
+            <li class="fondBleu"><a href="/">Home</a></li>
+            <li class="dropdown fondBleu">
+              <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                  Administration
+                </a>
+              <ul class="dropdown-menu">
+                    <li><a href="#">Gestion Parcelle</a></li>
+                    <li><a href="#">Gestion Ouvrier</a></li>
+                    <li><a href="#">Gestion Intervention</a></li>
+                    <li><a href="#">Affectation Intervention à Ouvrier</a></li>
+              </ul>
+            </li>
+
+            <li class="dropdown fondBleu">
+              <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                  Analyse données
+                </a>
+              <ul class="dropdown-menu">
+                    <li><a href="/regLineaire">Par régression linéaire</a></li>
+                    <li><a href="#">....</a></li>
+                    <li><a href="#">....</a></li>
+                    <li><a href="#">....</a></li>
+              </ul>
+            </li>
+          </ul>
+          
+    </div>
+
+    <div class="content">
+      {%block content%}
+      {%endblock%}
+
+    </div>
+    <!------------------------------------------------------------------------->
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <script src="static/bootstrap/js/bootstrap.min.js"></script>
+</body>
+</html>
